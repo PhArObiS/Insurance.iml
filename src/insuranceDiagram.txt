@@ -1,0 +1,31 @@
+    InsuranceCompany
+    |   - InsuranceAgreement[]
+    |   - double totalMoney
+    |
+    |   + displayMenu()
+    |   + receiveNewApplications()
+    |   + seeAllInsuranceAgreements()
+    |   + seeFinancialBreakdown()
+    |   + breakInsuranceAgreement()
+    |   + moveTimeForward()
+
+    InsuranceAgreement
+    |   - Client client
+    |   - double yearlyFee
+    |   - Risk risk
+    |   - double insuranceAmount
+    |
+    |   + InsuranceAgreement(Client, double, Risk, double)
+    |   + claimInsurance()
+    |   + getNetProfit()
+    |   + displayAgreement()
+
+    Client
+    |   - String name
+    |
+    |   + Client(String)
+
+    Risk (Enum)
+    |   - LOW (5%)
+    |   - MEDIUM (50%)
+    |   - HIGH (100%)
